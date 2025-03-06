@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -101,7 +100,7 @@
   }
   
   .subtle-scroll {
-    @apply scrollbar-thin scrollbar-thumb-secondary scrollbar-track-transparent;
+    @apply scrollbar-thin;
   }
 
   .hoverable {
@@ -123,6 +122,10 @@
 
 /* Subtle customized scrollbar */
 @layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  
   .scrollbar-thin::-webkit-scrollbar {
     width: 6px;
   }
